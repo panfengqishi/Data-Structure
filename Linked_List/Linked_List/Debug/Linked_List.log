@@ -1,5 +1,5 @@
-﻿生成启动时间为 2018/2/21 19:10:14。
-     1>项目“D:\Data Structure\Linked_List\Linked_List\Linked_List.vcxproj”在节点 2 上(build 个目标)。
+﻿生成启动时间为 2018/3/4 22:49:17。
+     1>项目“D:\Data-Structure\Linked_List\Linked_List\Linked_List.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\Linked_List.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
@@ -8,19 +8,19 @@
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Data Structure\Linked_List\Debug\Linked_List.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Linked_List.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Data Structure\Linked_List\Debug\Linked_List.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Data Structure\Linked_List\Debug\Linked_List.lib" /MACHINE:X86 Debug\Linked_List.exe.embed.manifest.res
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Data-Structure\Linked_List\Debug\Linked_List.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Linked_List.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Data-Structure\Linked_List\Debug\Linked_List.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Data-Structure\Linked_List\Debug\Linked_List.lib" /MACHINE:X86 Debug\Linked_List.exe.embed.manifest.res
          Debug\main.obj
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Linked_List.exe.embed.manifest" /manifest Debug\Linked_List.exe.intermediate.manifest
          所有输出均为最新。
        LinkEmbedManifest:
          所有输出均为最新。
-         Linked_List.vcxproj -> D:\Data Structure\Linked_List\Debug\Linked_List.exe
+         Linked_List.vcxproj -> D:\Data-Structure\Linked_List\Debug\Linked_List.exe
        FinalizeBuildStatus:
          正在删除文件“Debug\Linked_List.unsuccessfulbuild”。
          正在对“Debug\Linked_List.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“D:\Data Structure\Linked_List\Linked_List\Linked_List.vcxproj”(build 个目标)的操作。
+     1>已完成生成项目“D:\Data-Structure\Linked_List\Linked_List\Linked_List.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.51
+已用时间 00:00:00.43

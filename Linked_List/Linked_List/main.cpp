@@ -10,6 +10,8 @@ void CreateLinkList(LinkList &L,int n,char arr[]);
 
 void PrintLinkList(LinkList L);
 
+void ReverseLinkList(LinkList L);
+
 int LinkListLength(LinkList L);
 
 //increase ch before n-th 
@@ -32,6 +34,11 @@ int main(){
 	DeleteLNode(L1,1);
 	PrintLinkList(L1);
 	printf("%d\n",LinkListLength(L1));
+
+	ReverseLinkList(L1);
+	PrintLinkList(L1);
+	ReverseLinkList(L1);
+	PrintLinkList(L1);
 	return 0;
 }
 
@@ -79,6 +86,23 @@ void PrintLinkList(LinkList L){
 	free(p);
 	printf("\n");
 }//PrintLinkList
+
+void ReverseLinkList(LinkList L){
+	LinkList p=NULL,q=NULL,s=NULL;
+	p=L->next;
+	q=p->next;
+	s=q->next;
+	p->next=NULL;
+	while(s->next){
+		q->next=p;
+		p=q;
+		q=s;
+		s=s->next;
+	}
+	q->next=p;
+	s->next=q;
+	L->next=s;
+}//ReverseLinkList
 
 int LinkListLength(LinkList L){
 	int len=0;
