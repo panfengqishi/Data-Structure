@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef char ElemType;
+
 typedef struct LNode{
-	char data;
+	ElemType data;
 	LNode *next;
 }LNode,*LinkList;
 
-void CreateLinkList(LinkList &L,int n,char arr[]);
+void CreateLinkList(LinkList &L,int n,ElemType arr[]);
 
 void PrintLinkList(LinkList L);
 
@@ -15,13 +17,15 @@ void ReverseLinkList(LinkList L);
 int LinkListLength(LinkList L);
 
 //increase ch before n-th 
-bool IncreaseLNode(LinkList &L,int n,char ch);
+bool IncreaseLNode(LinkList &L,int n,ElemType ch);
 
 // delete n-th Node
 bool DeleteLNode(LinkList &L,int n);
 
+void DestroyLinkList(LinkList L);
+
 int main(){
-	char arr1[10]={'A','A','B','C','D','E','F','G','G','G'};
+	ElemType arr1[10]={'A','A','B','C','D','E','F','G','G','G'};
 	LinkList L1=NULL;
 	CreateLinkList(L1,10,arr1);
 	PrintLinkList(L1);
@@ -42,7 +46,7 @@ int main(){
 	return 0;
 }
 
-void CreateLinkList(LinkList &L,int n,char arr[]){
+void CreateLinkList(LinkList &L,int n,ElemType arr[]){
 	if(L=(LinkList)malloc(sizeof(LNode))){
 		L->data=NULL;
 		L->next=NULL;
@@ -110,7 +114,7 @@ int LinkListLength(LinkList L){
 	return len;
 }//LinkListLength
 
-bool IncreaseLNode(LinkList &L,int n,char ch){
+bool IncreaseLNode(LinkList &L,int n,ElemType ch){
 	if(n<1||n>(LinkListLength(L)+1)){
 		return false;
 	}
@@ -139,4 +143,8 @@ bool DeleteLNode(LinkList &L,int n){
 		free(q);
 		return true;
 	}
+}//DeteleLNode
+
+void DestroyLinkList(LinkList L){
+
 }
